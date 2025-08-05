@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrsaffa.com/sitemap.xml
+
+Disallow: /admin
+
+Allow: /
+Allow: /products
+Allow: /catalogue
+Allow: /cart
+Allow: /checkout
+Allow: /track-order
+
+Crawl-delay: 1

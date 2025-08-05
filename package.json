@@ -1,0 +1,23 @@
+{
+  "name": "mr-saffa-ecommerce",
+  "version": "1.0.0",
+  "description": "Mr. Saffa Cleaning Products Ecommerce Website",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "concurrently -n \"CLIENT,SERVER\" -c \"bgCyan,bgMagenta\" \"npm run client\" \"npm run server\"",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-deps": "cd server && npm install && cd ../client && npm install",
+    "install-all": "npm run install-deps",
+    "start": "cd server && npm start",
+    "build-client": "cd client && npm run build",
+    "test-local": "npm run build-client && npm run start"
+  },
+  "keywords": ["ecommerce", "cleaning", "products", "catalogue", "react", "nodejs"],
+  "author": "Mr. Saffa",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
