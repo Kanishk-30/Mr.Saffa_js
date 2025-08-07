@@ -35,7 +35,7 @@ app.use(limiter)
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
     ? [
-        process.env.CLIENT_URL || 'https://your-client.vercel.app',
+        process.env.CLIENT_URL || 'https://mr-saffa-client.vercel.app',
         'https://mrsaffa.in',
         'https://www.mrsaffa.in'
       ]
