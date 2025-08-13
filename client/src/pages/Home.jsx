@@ -54,7 +54,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-red-50 py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
@@ -108,7 +108,7 @@ const Home = () => {
 
       {/* Features Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Choose Mr. Saffa?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -133,7 +133,7 @@ const Home = () => {
 
       {/* Featured Products */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0101d9] to-[#d50204]">
@@ -174,7 +174,7 @@ const Home = () => {
 
       {/* Testimonials Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Customer & Partner Reviews</h2>
             <p className="text-gray-600">Quality you can trust, service you can rely on</p>
