@@ -30,7 +30,7 @@ const Header = () => {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       {/* Top bar */}
       <div className="bg-gradient-to-r from-[#0101d9] to-[#d50204] text-white py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
+        <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <MapPin className="w-4 h-4 mr-1" />
@@ -44,7 +44,7 @@ const Header = () => {
       </div>
 
       {/* Main header */}
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <Link to="/" className="hover:opacity-90 transition-opacity duration-200">
