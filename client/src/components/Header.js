@@ -16,7 +16,7 @@ const Header = () => {
     { path: "/", label: "Home" },
     { path: "/products", label: "Products" },
     { path: "/catalogue", label: "Catalogue" },
-    { path: "/track-order", label: "Track Inquiry" },
+    { path: "/contact", label: "Contact" }, // ✅ NEW
   ]
 
   const isActivePath = (path) => {
@@ -34,11 +34,11 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center">
               <MapPin className="w-4 h-4 mr-1" />
-              <span>Hanumangarh (335513, 335512)</span>
+              <span>Hanumangarh</span>
             </div>
           </div>
           <div className="hidden md:block">
-            <span>Helpline:- +91 98765 43210</span>
+            <span>Helpline:- +91 7878888406</span>
           </div>
         </div>
       </div>
@@ -58,8 +58,8 @@ const Header = () => {
               }}
             />
             {/* Fallback logo */}
-            <div 
-              className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#d50204] to-[#0101d9] rounded-full flex items-center justify-center shadow-lg" 
+            <div
+              className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#d50204] to-[#0101d9] rounded-full flex items-center justify-center shadow-lg"
               style={{ display: 'none' }}
             >
               <span className="text-white font-bold text-lg md:text-xl">MS</span>
@@ -72,11 +72,10 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`font-medium transition-colors duration-200 ${
-                  isActivePath(link.path)
+                className={`font-medium transition-colors duration-200 ${isActivePath(link.path)
                     ? "text-[#0101d9] border-b-2 border-[#0101d9] pb-1"
                     : "text-gray-700 hover:text-[#0101d9]"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -116,11 +115,10 @@ const Header = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`font-medium transition-colors duration-200 py-2 px-2 rounded ${
-                    isActivePath(link.path) 
-                      ? "text-[#0101d9] font-semibold bg-gradient-to-r from-[#0101d9]/10 to-[#d50204]/10" 
+                  className={`font-medium transition-colors duration-200 py-2 px-2 rounded ${isActivePath(link.path)
+                      ? "text-[#0101d9] font-semibold bg-gradient-to-r from-[#0101d9]/10 to-[#d50204]/10"
                       : "text-gray-700 hover:text-[#0101d9] hover:bg-gray-50"
-                  }`}
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}

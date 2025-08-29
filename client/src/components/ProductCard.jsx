@@ -64,7 +64,7 @@ const ProductCard = ({ product }) => {
           {/* Product Price - Lower Left (REDUCED) */}
           <div className="flex flex-col">
             <div className="flex items-baseline space-x-1">
-              <span className="text-xs text-gray-400 font-medium">FROM</span>
+              <span className="text-xs text-gray-400 font-medium">PRICE</span>
               <span className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#d50204] to-[#0101d9]">
                 ₹{product.price}
               </span>

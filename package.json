@@ -14,10 +14,20 @@
     "build-client": "cd client && npm run build",
     "test-local": "npm run build-client && npm run start"
   },
-  "keywords": ["ecommerce", "cleaning", "products", "catalogue", "react", "nodejs"],
+  "keywords": [
+    "ecommerce",
+    "cleaning",
+    "products",
+    "catalogue",
+    "react",
+    "nodejs"
+  ],
   "author": "Mr. Saffa",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0"
   }
 }

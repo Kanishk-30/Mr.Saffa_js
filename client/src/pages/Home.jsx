@@ -58,10 +58,10 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
-                Keep Your Space
+                Your Cleaning Assistant<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0101d9] to-[#d50204]">
                   {" "}
-                  Sparkling Clean
+                  Mr. Saffa
                 </span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
@@ -236,7 +236,7 @@ const Home = () => {
               to="/contact"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0101d9] transition-all duration-300 text-center"
             >
-              Contact Us
+              Register!!!
             </Link>
           </div>
         </div>

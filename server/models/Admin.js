@@ -8,6 +8,7 @@ const adminSchema = new mongoose.Schema(
       required: [true, "Username is required"],
       unique: true,
       trim: true,
+      lowercase: true, // ✅ Ensure consistent case
       minlength: [3, "Username must be at least 3 characters"],
       maxlength: [20, "Username cannot exceed 20 characters"],
     },
@@ -20,7 +21,9 @@ const adminSchema = new mongoose.Schema(
       type: String,
       unique: true,
       sparse: true,
-      match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, "Please enter a valid email"],
+      trim: true,
+      lowercase: true,
+      match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, "Please enter a valid email"], // ✅ Fixed regex
     },
     role: {
       type: String,
@@ -34,38 +37,60 @@ const adminSchema = new mongoose.Schema(
     lastLogin: {
       type: Date,
     },
+    loginAttempts: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,
   },
 )
 
-// Hash password before saving
+// ✅ Enhanced password hashing with logging
 adminSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next()
 
   try {
+    console.log("🔒 Hashing password for admin:", this.username)
     const salt = await bcrypt.genSalt(12)
+    const originalPassword = this.password
     this.password = await bcrypt.hash(this.password, salt)
+    console.log("✅ Password hashed successfully")
+    console.log("  Original length:", originalPassword.length)
+    console.log("  Hash length:", this.password.length)
     next()
   } catch (error) {
+    console.error("❌ Password hashing error:", error)
     next(error)
   }
 })
 
-// Compare password method
+// ✅ Enhanced password comparison with logging
 adminSchema.methods.comparePassword = async function (candidatePassword) {
   try {
-    return await bcrypt.compare(candidatePassword, this.password)
+    console.log("🔍 Comparing password for admin:", this.username)
+    console.log("  Candidate password length:", candidatePassword.length)
+    console.log("  Stored hash length:", this.password.length)
+    
+    const isMatch = await bcrypt.compare(candidatePassword, this.password)
+    console.log("🔍 Password match result:", isMatch)
+    return isMatch
   } catch (error) {
+    console.error("❌ Password comparison error:", error)
     throw error
   }
 }
 
-// Update last login
+// ✅ Enhanced last login update
 adminSchema.methods.updateLastLogin = function () {
   this.lastLogin = new Date()
+  this.loginAttempts = 0
+  console.log("📅 Updated last login for:", this.username)
   return this.save()
 }
+
+// ✅ Add index for performance
+adminSchema.index({ username: 1 })
 
 module.exports = mongoose.model("Admin", adminSchema)

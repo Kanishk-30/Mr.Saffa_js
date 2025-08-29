@@ -1,15 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import Products from "./pages/Products"
 import Cart from "./pages/Cart"
 import Checkout from "./pages/Checkout"
-import OrderTracking from "./pages/OrderTracking"
 import Admin from "./pages/Admin"
 import Catalogue from "./pages/Catalogue"
+import InquiryThankYou from "./pages/InquiryThankYou"
+import Contact from "./pages/contact.jsx"               
 import { CartProvider } from "./context/CartContext"
 import "./App.css"
+
+// ✅ Wrapper for thank you page
+const InquiryThankYouWrapper = () => {
+  const location = useLocation()
+  const inquiry = location.state?.inquiry
+  return <InquiryThankYou inquiry={inquiry} />
+}
 
 function App() {
   return (
@@ -22,10 +30,11 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
               <Route path="/catalogue" element={<Catalogue />} />
+              <Route path="/contact" element={<Contact />} />   {/* ✅ NEW */}
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
-              <Route path="/track-order" element={<OrderTracking />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/thank-you" element={<InquiryThankYouWrapper />} />
             </Routes>
           </main>
           <Footer />

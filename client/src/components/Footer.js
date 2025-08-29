@@ -18,8 +18,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-4">
-              Your trusted partner for all cleaning needs in Hanumangarh. We provide high-quality cleaning products for
-              homes and businesses with fast delivery and excellent service.
+              At Mr. Saffa, we don't just produce cleaning products, we create trust. Each product is a promise of quality and care. As the maker and guardian of our brand, we ensure excellence in every drop. Choose Mr. Saffa for purity, power, and peace of mind.
             </p>
             <div className="flex space-x-4">
               <a
@@ -56,14 +55,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-blue-400 flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-gray-300 hover:text-white transition-colors">
-                  +91 98765 43210
+                <a href="tel:+917878888406" className="text-gray-300 hover:text-white transition-colors">
+                  +91 7878888406
                 </a>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-blue-400 flex-shrink-0" />
-                <a href="mailto:info@mrsaffa.com" className="text-gray-300 hover:text-white transition-colors">
-                  info@mrsaffa.com
+                <a href="mailto:mrsaffa01@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                  mrsaffa01@gmail.com
                 </a>
               </div>
             </div>
