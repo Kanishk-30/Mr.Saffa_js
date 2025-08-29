@@ -100,10 +100,10 @@ const Contact = () => {
             <li className="flex items-center">
               <Mail className="w-5 h-5 mr-2 text-green-600" />
               <a
-                href="mailto:support@mr-saffa.com"
+                href="mailto:mrsaffa01@gmail.com"
                 className="hover:underline text-blue-700"
               >
-                mrsaffa01@gmail.com
+                support@mrsaffa.mail
               </a>
             </li>
           </ul>
