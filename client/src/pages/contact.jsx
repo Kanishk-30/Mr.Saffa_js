@@ -82,14 +82,14 @@ const Contact = () => {
           <ul className="space-y-3 mb-5 text-gray-700 font-medium">
             <li className="flex items-center">
               <Phone className="w-5 h-5 mr-2 text-green-600" />
-              <a href="tel:+919123456789" className="hover:underline text-blue-700">
-                +91-91234 56789
+              <a href="tel:+917878888406" className="hover:underline text-blue-700">
+                +91-7878888406
               </a>
             </li>
             <li className="flex items-center">
               <MessageCircle className="w-5 h-5 mr-2 text-green-600" />
               <a
-                href="https://wa.me/919123456789"
+                href="https://wa.me/917878888406"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-green-700 font-semibold"
@@ -103,7 +103,7 @@ const Contact = () => {
                 href="mailto:support@mr-saffa.com"
                 className="hover:underline text-blue-700"
               >
-                support@mr-saffa.com
+                mrsaffa01@gmail.com
               </a>
             </li>
           </ul>
