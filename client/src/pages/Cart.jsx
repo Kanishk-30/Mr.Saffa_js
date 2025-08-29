@@ -178,11 +178,11 @@ const Cart = () => {
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center text-gray-700">
                     <span className="font-medium">📞 Call:</span>
-                    <span className="ml-2">+91 98765 43210</span>
+                    <span className="ml-2">+91 7878888406</span>
                   </div>
                   <div className="flex items-center text-gray-700">
                     <span className="font-medium">📧 Email:</span>
-                    <span className="ml-2">sales@mr-saffa.com</span>
+                    <span className="ml-2">mrsaffa01@gmail.com</span>
                   </div>
                 </div>
               </div>
