@@ -295,8 +295,8 @@ const Checkout = ({ standalone = false }) => {
                     <Phone className="w-4 h-4 mr-2 text-blue-600" />
                     <span className="font-semibold text-blue-800">Need immediate assistance?</span>
                   </div>
-                  <p className="text-sm text-blue-700">Call us: +91 98765 43210</p>
-                  <p className="text-sm text-blue-700">Email: sales@mr-saffa.com</p>
+                  <p className="text-sm text-blue-700">Call us: +91 7878888406</p>
+                  <p className="text-sm text-blue-700">Email: mrsaffa01@gmail.com</p>
                 </div>
               </div>
             </div>
