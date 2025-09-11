@@ -1,11 +1,11 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-800 text-white">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
@@ -22,25 +22,22 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
-                className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                href="https://www.facebook.com/profile.php?id=61580504932335"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Facebook"
               >
-                <span className="text-white text-sm font-bold">f</span>
+                <Facebook className="w-5 h-5 text-white" />
               </a>
               <a
-                href="#"
-                className="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
+                href="https://www.instagram.com/mr_saffa.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
                 aria-label="Instagram"
               >
-                <span className="text-white text-sm font-bold">@</span>
-              </a>
-              <a
-                href="#"
-                className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors"
-                aria-label="WhatsApp"
-              >
-                <span className="text-white text-sm font-bold">W</span>
+                <Instagram className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -68,18 +65,30 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Service Info */}
+          {/* Social Medias */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Service Areas</h4>
-            <div className="space-y-2 text-gray-300 mb-4">
-              <p>Hanumangarh - 335513</p>
-              <p>Hanumangarh - 335512</p>
-            </div>
-            <div className="mt-4">
-              <div className="flex items-center">
-                <Clock className="w-5 h-5 mr-3 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-300">9 AM - 8 PM</span>
-              </div>
+            <h4 className="text-lg font-semibold mb-4">Social Medias</h4>
+            <div className="space-y-3">
+              <a
+                href="https://www.instagram.com/mr_saffa.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-pink-500 flex-shrink-0" />
+                <span>Instagram</span>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61580504932335"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span>Facebook</span>
+              </a>
             </div>
           </div>
         </div>
