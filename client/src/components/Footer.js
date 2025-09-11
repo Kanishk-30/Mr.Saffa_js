@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/profile.php?id=61580504932335"
+                href="https://www.facebook.com/mrsaffa.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
@@ -31,7 +31,7 @@ const Footer = () => {
                 <Facebook className="w-5 h-5 text-white" />
               </a>
               <a
-                href="https://www.instagram.com/mr_saffa.in/"
+                href="https://www.instagram.com/polestar_finechem_india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors"
@@ -70,7 +70,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Social Medias</h4>
             <div className="space-y-3">
               <a
-                href="https://www.instagram.com/mr_saffa.in/"
+                href="https://www.instagram.com/polestar_finechem_india/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
@@ -80,7 +80,7 @@ const Footer = () => {
                 <span>Instagram</span>
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61580504932335"
+                href="https://www.facebook.com/mrsaffa.in"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
