@@ -89,6 +89,16 @@ const Footer = () => {
                 <Facebook className="w-5 h-5 text-blue-600 flex-shrink-0" />
                 <span>Facebook</span>
               </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100090428921848"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                <span>PSFC India</span>
+              </a>
             </div>
           </div>
         </div>
